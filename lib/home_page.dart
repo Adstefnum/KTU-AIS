@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'widgets/drawer.dart';
+import 'notifs.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -17,11 +18,13 @@ class HomePageState extends State<HomePage> {
         actions: <Widget>[
     IconButton(
       icon:const  Icon(
-        Icons.settings,
+        Icons.notifications,
         color: Colors.white,
       ),
       onPressed: () {
-        // do something
+        
+    Route route = MaterialPageRoute(builder: (context) =>const NotifsPage());
+                Navigator.push(context,route);
       },
     )
   ],
@@ -29,7 +32,7 @@ class HomePageState extends State<HomePage> {
         centerTitle: true,
         backgroundColor: Colors.green,   
                       ), 
-      drawer: DrawerClass(),       
+      drawer:  const DrawerClass(),       
       body: Column()
     );
         }
