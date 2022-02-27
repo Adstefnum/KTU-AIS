@@ -13,7 +13,13 @@ Widget build(BuildContext context){
   return Drawer(
       child: ListView(
         children: <Widget>[
-        const  Divider(height:5.0, color: Colors.purple ),
+      Row(children:const <Widget>[
+     Icon(Icons.account_circle_rounded ),
+    Text("9.2"),
+      ],) ,
+      const Text("E1275"),
+       const Text("Stephen Oluwabukunmi Adesina"),
+        const Divider(height:5.0, color: Colors.purple ),
           drawerBtn("Standard",Icons.assignment),
           drawerBtn("Scientific",Icons.change_history),
           drawerBtn("Programmer",Icons.code),
