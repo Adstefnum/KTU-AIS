@@ -67,26 +67,24 @@ bool errortextvisibility = false;
     return Scaffold(
       body:ListView(
         children: <Widget>[
-          Container(
-            child: Stack(
+             Stack(
               children: <Widget>[
                           Visibility(
           visible: visible, 
-          child: Container(
-            child: LinearProgressIndicator()
-            )
+           child: const LinearProgressIndicator()
+            
           ),
               Visibility(
             visible: errortextvisibility,
-            child:Container(
-          child:Text(msg,style:const TextStyle(fontSize: 20.0, color: Colors.red)),)),
-                  MyTextWidget(),
-                Container(
-                  padding: EdgeInsets.only(top:265.0, left:20.0, right:20.0),
+         child:Text(msg,style:const TextStyle(fontSize: 20.0, color: Colors.red)))]),
+                 const MyTextWidget(),
+               Container(
+                  padding: const EdgeInsets.only(top:265.0, left:20.0, right:20.0),
                   child: Column(
                     children: <Widget>[
                      const MyInputBox(),
-                     Container(
+                   const SizedBox(height:20.0),
+                   Container(
                         height: 40.0,
                         child: Material(
                           borderRadius: BorderRadius.circular(20.0),
@@ -94,10 +92,10 @@ bool errortextvisibility = false;
                           color: Colors.green,
                           elevation: 7.0,
                           child: GestureDetector( 
-                            onTap: () { Route route = MaterialPageRoute(builder: (context) => HomePage());
+                            onTap: () { Route route = MaterialPageRoute(builder: (context) => const HomePage());
                 Navigator.push(context,route);/*userLogin()*/},
-                            child: Center(
-                              child: Text(
+                            child: const Center(
+                              child:  Text(
                                 'LOGIN',
                                 style: TextStyle(
                                   color: Colors.white,
@@ -107,25 +105,7 @@ bool errortextvisibility = false;
                               )
                             ))
                         )
-                      ),
-                      SizedBox(height:20.0),
-                      Container(
-                        height: 40.0,
-                        color: Colors.transparent,
-                        child: Container(
-                          decoration: BoxDecoration(
-                            border: Border.all(
-                              color: Colors.black,
-                              style: BorderStyle.solid,
-                              width: 1.0
-                          ),
-                          color: Colors.transparent,
-                          borderRadius: BorderRadius.circular(20.0)
-                          ),
-                          child: Row(mainAxisAlignment: MainAxisAlignment.center,          
-                 )
-                )
-                      )]
+                      ),]
             ),
           )
         ],
