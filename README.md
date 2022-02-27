@@ -12,7 +12,7 @@ An app for my university's academic Information System
 - Redo login page 
     - Add KTU Logo
     - Remove extra button
-    - Resize whole page to be more visually appealing
+    - Resize whole page to be more visually appealinm
 - Make the appBar a widget to use on every page that needs it
 
 ## Design
