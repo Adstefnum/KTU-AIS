@@ -4,6 +4,7 @@ import 'dart:convert';
 import 'home_page.dart';
 import 'widgets/texts.dart';
 import 'widgets/input_box.dart';
+import 'UI/colors.dart';
 
 class LoginUser extends StatefulWidget {
 const LoginUser({Key? key}) : super(key: key);
@@ -16,8 +17,9 @@ final loginPassword = TextEditingController();
 bool visible = false;
 String msg = ' ';
 bool errortextvisibility = false;
-
   
+var mycolors = KTUColors;
+
 //   userLogin() async{
 //
 //  // Showing CircularProgressIndicator.
@@ -100,7 +102,7 @@ bool errortextvisibility = false;
                               child:  Text(
                                 'LOGIN',
                                 style: TextStyle(
-                                  color: Colors.white,
+                                  color: KTUColors.textwhColor,
                                   fontWeight: FontWeight.bold,
                                   fontFamily: 'Montserrat'
                                 )
