@@ -2,18 +2,15 @@
 An app for my university's academic Information System
 
 ## TODO
-- Make the title inheritable and not hardcoded throughout the whole project
 - Make main page a daily time table using cards for each subject.
 - List all categories in side bar
-- Add account icon in drawer and placeholder info
+- Update Account Info on drawer via API
+- Determine what will be on the drawer
 - Change notification icon to one with red dot if there is a notification
-- Make global colors 
-- Dark Mode in settings
-- Redo login page 
-    - Add KTU Logo
-    - Remove extra button
-    - Resize whole page to be more visually appealinm
-- Make the appBar a widget to use on every page that needs it
+- Make global colors, colors are determined just create color file 
+- Dark Mode in drawer
+- Change drawerBtn return type to one that has an onPressed function but keeps its current UI
+
 
 ## Design
 - Notification Icon links to notification page which is split into 
@@ -22,10 +19,10 @@ An app for my university's academic Information System
     - Warnings
 - Drawer Contains
     - 
-- Colors
-    - Primary Color:
-    - Secondary Color:
-    - Base color: White
+- Colors(Define in a file and refernece from there)
+    - Primary Color: Purple
+    - Secondary Color: Blue and Yellow
+    - Base color: White/Black
 
 - Home page is the time table for the day
 - Dark Mode

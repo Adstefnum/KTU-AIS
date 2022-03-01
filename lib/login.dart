@@ -77,19 +77,21 @@ bool errortextvisibility = false;
               Visibility(
             visible: errortextvisibility,
          child:Text(msg,style:const TextStyle(fontSize: 20.0, color: Colors.red)))]),
-                 const MyTextWidget(),
+
                Container(
-                  padding: const EdgeInsets.only(top:265.0, left:20.0, right:20.0),
+                  padding: const EdgeInsets.only(top:120.0, left:20.0, right:20.0),
                   child: Column(
                     children: <Widget>[
+                            Image.asset('assets/images/ktu-logo-en-full.png'),
+                            const SizedBox(height:100.0),
                      const MyInputBox(),
-                   const SizedBox(height:20.0),
+                   const SizedBox(height:50.0),
                    Container(
                         height: 40.0,
                         child: Material(
                           borderRadius: BorderRadius.circular(20.0),
-                          shadowColor: Colors.greenAccent,
-                          color: Colors.green,
+                          shadowColor: Colors.purpleAccent,
+                          color: Colors.purple,
                           elevation: 7.0,
                           child: GestureDetector( 
                             onTap: () { Route route = MaterialPageRoute(builder: (context) => const HomePage());
@@ -109,8 +111,7 @@ bool errortextvisibility = false;
             ),
           )
         ],
-      )
-    )]));}
+      ));}
 }
 
 

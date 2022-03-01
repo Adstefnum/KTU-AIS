@@ -12,10 +12,10 @@ Widget _inputBox( bool _obscure, String text){
                         labelStyle: const TextStyle(
                           fontFamily: 'Montserrat',
                           fontWeight: FontWeight.bold,
-                          color: Colors.grey,
+                          color: Colors.black,
                         ),
                         focusedBorder: const UnderlineInputBorder(
-                          borderSide: BorderSide(color: Colors.green)
+                          borderSide: BorderSide(color: Colors.purple)
                         )
                         )
 
@@ -25,6 +25,7 @@ Widget _inputBox( bool _obscure, String text){
                 return Column( children: <Widget>[
                     
                         _inputBox(false, 'Username'),
+                        const SizedBox(height:15.0),
                         _inputBox(true, 'Password'),
                 ],
 
