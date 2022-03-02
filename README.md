@@ -10,7 +10,11 @@ An app for my university's academic Information System
 - Change drawerBtn return type to one that has an onPressed function but keeps its current UI
 - Navigate to class with google maps API screen within app upon clicking address
 - Timetable cards on homepage that can expand to show more details but I don't think this is needed
-
+- Scroll:
+   - left for previous day time table
+   - right for next day time table
+   - up for last week
+   - down for next week
 ## Design
 - Notification Icon links to notification page which is split into 
     - Messages
